@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆</title>
+    <link rel="stylesheet" href="./222.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-wrapper">
+            <div class="header">登 陆</div>
+            <div class="form">
+                <input type="text" name="username" placeholder="username" id="one">
+                <input type="password" name="password" placeholder="password" id="two">
+                <div class="btn">登 陆</div>
+            </div>
+            <div class="msg">
+                你有账号吗？
+                <a href="#">注 册</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var one = document.querySelector('#one')
+        var two = document.querySelector('#two')
+        var btn = document.querySelector('.btn')
+            btn.addEventListener("click", () => {
+            var one1 = one.value 
+            var two1 = two.value
+            if((one1=='jyz')&&(two1=='123456'))
+                window.location.href = "http://127.0.0.1:5500/web%E6%9C%9F%E6%9C%AB%E6%8A%A5%E5%91%8A/000/index.html";
+            else alert('用户名或密码错误！')
+            }
+            );
+        
+        
+    </script>
+</body>
+</html>
